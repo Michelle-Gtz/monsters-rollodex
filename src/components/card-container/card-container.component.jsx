@@ -1,9 +1,8 @@
-import { Component } from "react";
+
 import './card-container.component.css';
 
-class CardContainer extends Component {
-    render() {
-        const {name, email, id} = this.props.monster;
+const CardContainer = ({monster}) => {
+        const {name, email, id} = monster;
 
         return(
             <div className='card-container' key={id}>
@@ -17,6 +16,5 @@ class CardContainer extends Component {
            )
     }
 
-}
 
 export default CardContainer
